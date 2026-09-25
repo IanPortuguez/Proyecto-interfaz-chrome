@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de inicio de Google con búsqueda integrada y modo de inteligencia artificial">
+    <title>Google</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header__nav" aria-label="Navegación principal">
+            <ul class="header__nav__list">
+                <li class="header__nav__item">
+                    <a class="header__nav__link"
+                       href="https://mail.google.com/mail/u/0/#inbox"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Abrir Gmail">
+                        Gmail
+                    </a>
+                </li>
+
+                <li class="header__nav__item">
+                    <a class="header__nav__link"
+                       href="https://www.google.com/imghp?hl=es&tab=ri&authuser=0&ogbl"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Abrir Google Imágenes">
+                        Imágenes
+                    </a>
+                </li>
+
+                <li class="header__nav__item header__nav__item--icon">
+                    <button class="header__nav__button"
+                            type="button"
+                            aria-label="Abrir aplicaciones de Google">
+                        <img class="header__nav__icon"
+                             src="sources/icon/icono-opciones.png"
+                             alt=""
+                             aria-hidden="true">
+                    </button>
+                </li>
+
+                <li class="header__nav__item header__nav__item--icon">
+                    <button class="header__nav__button"
+                            type="button"
+                            aria-label="Abrir cuenta de Google">
+                        <img class="header__nav__icon"
+                             src="sources/img/foto-perfil.png"
+                             alt="Foto de perfil"
+                             aria-hidden="true">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main__logo-section" aria-label="Logo de Google">
+            <figure class="main__logo-wrapper">
+                <img class="main__logo" src="sources/img/foto-google.png" alt="Logo de Google">
+            </figure>
+        </section>
+
+        <section class="main__search-section" aria-label="Barra de búsqueda">
+            <form class="search" role="search">
+                <button type="button" class="search__button search__button--add" aria-label="Agregar opciones de búsqueda"></button>
+
+                <label for="search-input" class="visually-hidden">Buscar en Google</label>
+                <input
+                    type="text"
+                    id="search-input"
+                    name="q"
+                    placeholder="Buscar en Google"
+                    aria-label="Buscar en Google"
+                    class="search__input">
+
+                <div class="search__icon-wrapper">
+                    <button type="button" class="search__button search__button--voice" aria-label="Búsqueda por voz"></button>
+                </div>
+                <div class="search__icon-wrapper">
+                    <button type="button" class="search__button search__button--camera" aria-label="Búsqueda por imagen"></button>
+                </div>
+
+                <div class="search__ai-mode">
+                    <button type="button" class="search__ai-button" aria-label="Activar modo de inteligencia artificial">
+                        <img class="search__ai-icon" src="sources/icon/icono-lupa.png" alt="" aria-hidden="true">
+                        <span class="search__ai-text">Modo IA</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer" aria-label="Pie de página">
+        
+    </footer>
+    
+</body>
+</html>
